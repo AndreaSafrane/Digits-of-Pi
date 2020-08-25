@@ -1,0 +1,15 @@
+#Input Format
+#An integer: 0<N<1000
+
+#Output Format 
+#An integer, representing the Nth decimal digit of Pi.
+
+from mpmath import mp
+
+num = int(input())
+
+mp.dps = num +2
+
+long = str(mp.pi)
+
+list = list(long)
